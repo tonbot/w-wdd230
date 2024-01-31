@@ -36,9 +36,10 @@ body {
  }
 
   nav {
-    grid-template-columns: 1fr;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
     display: none;
   }
@@ -137,12 +138,10 @@ body {
    }
     nav {
       display: block;
-      display: grid;
-      grid-template-columns: auto auto auto auto auto;
+      display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      padding-right: 20vw;
-      padding-left: 20vw;
       padding-top: 15px;
       padding-bottom: 15px;
     }

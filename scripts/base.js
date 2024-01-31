@@ -4,7 +4,7 @@
     document.getElementById("openNav").style.display="none";
     var nav = document.querySelector('nav');
     nav.style.display = 'block';
-    nav.style.display = 'grid';
+    nav.style.display = 'flex';
   }
 
   function closeNav() {
