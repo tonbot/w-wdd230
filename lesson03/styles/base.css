@@ -46,7 +46,7 @@ main{
     width: 100%;
     height: fit-content;
 }
-.card h3 {
+.card article h3 {
     margin: 0;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
