@@ -1,0 +1,274 @@
+:root {
+  --primary: #524632;
+  --secondary: #e6e6ea;
+  --accent: #4da1a9;
+  --accent-2: #4da1a9;
+  --accent-3: #cc3f59;
+}
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e6ea;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  max-width: 100vw;
+}
+/* section header start */
+header {
+  display: grid;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100vw;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper img {
+  width: 30px;
+  height: auto;
+}
+
+nav {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  display: none;
+}
+
+nav a {
+  color: var(--secondary);
+}
+
+.button-wrapper button {
+  border: 0;
+  background-color: transparent;
+  color: var(--secondary);
+}
+
+.button-wrapper button#closeNav {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--accent-3);
+  color: var(--secondary);
+}
+/* section header ends */
+
+/* section hero banner start*/
+.hero-banner {
+  background-color: #000;
+  color: #fff;
+  background-image: url("/chamber/images/ekiti-hero-image.jpg");
+  height: fit-content;
+}
+
+.hero-banner .hero-image {
+  max-width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.hero-banner .hero-image h1 {
+  text-align: center;
+  height: fit-content;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.hero-banner .hero-image a {
+  text-align: center;
+  color: #fff;
+  background-color: var(--accent-3);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 35px;
+}
+
+.hero-banner .hero-image a:hover {
+  background-color: var(--primary);
+}
+/* section hero banner ends*/
+
+footer .more-nav {
+  background-color: var(--primary);
+  padding: 10px 70px;
+  color: #fff;
+  text-align: center;
+}
+footer .author {
+  background-color: var(--accent-3);
+  padding: 10px 70px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+}
+
+.main-content {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 40px 10px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* medium css start */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    display: grid;
+    padding: 20px 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  nav {
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+  }
+
+  nav a {
+    color: var(--secondary);
+    padding: 0 10px;
+  }
+
+  .button-wrapper button {
+    border: 0;
+    background-color: transparent;
+    color: var(--secondary);
+  }
+
+  .button-wrapper button#closeNav {
+    display: none;
+  }
+  .button-wrapper button#openNav {
+    display: none;
+  }
+  .main-content {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 40px 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "item-1 item-1 item-2"
+      "item-3 item-3 item-3";
+  }
+
+  .main-content :nth-child(1) {
+    grid-area: item-1;
+  }
+  .main-content :nth-child(2) {
+    grid-area: item-2;
+  }
+  .main-content :nth-child(3) {
+    grid-area: item-3;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+/* medium css end */
+
+/* larger css start */
+@media screen and (min-width: 1025px) {
+  header {
+    display: grid;
+    padding: 10px 70px;
+    grid-template-columns: 1fr 1fr;
+  }
+  nav {
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+  }
+
+  nav a {
+    color: var(--secondary);
+    padding: 0 10px;
+  }
+
+  .button-wrapper button {
+    border: 0;
+    background-color: transparent;
+    color: var(--secondary);
+  }
+
+  .button-wrapper button#closeNav {
+    display: none;
+  }
+  .button-wrapper button#openNav {
+    display: none;
+  }
+  .hero-banner .hero-image {
+    padding: 70px;
+  }
+  .hero-banner .hero-image h1 {
+    font-size: 5em;
+  }
+  .hero-banner .hero-image a {
+    font-size: 2em;
+    margin-bottom: 70px;
+  }
+
+  .main-content {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 40px 90px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "item-1 item-1 item-2"
+      "item-3 item-3 item-3";
+  }
+
+  .main-content :nth-child(1) {
+    grid-area: item-1;
+  }
+  .main-content :nth-child(2) {
+    grid-area: item-2;
+  }
+  .main-content :nth-child(3) {
+    grid-area: item-3;
+  }
+  .card {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+/* larger css end */
