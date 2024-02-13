@@ -14,3 +14,19 @@
     nav.style.display = 'none';
   }
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const checkbox = document.querySelector('.switch input[type="checkbox"]');
+    const cards = document.querySelectorAll('.card');
+    
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            document.body.style.backgroundColor = '#222';
+            document.body.style.color = '#fff'; 
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.style.backgroundColor = '#fff';
+            document.body.style.color = '#222'; 
+        }
+    });
+});
+
