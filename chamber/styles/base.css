@@ -5,6 +5,7 @@
   --accent-2: #4da1a9;
   --accent-3: #cc3f59;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -137,14 +138,21 @@ footer .author {
 .card {
   padding: 20px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #222;
+  color: #fff;
   box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Dark mode color scheme */
 .dark-mode .card {
-  background-color: #222; /* Dark background color */
-  color: #fff; /* Light text color */
+  background-color: #fff;
+  color: #222; 
+}
+
+/* Dark mode color scheme */
+.light-mode .card {
+  background-color: #222;
+  color: #fff; 
 }
 
 .switch {
@@ -167,7 +175,7 @@ footer .author {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--secondary); /* Change to secondary color */
+  background-color: var(--secondary);
   transition: .4s;
 }
 
@@ -178,12 +186,12 @@ footer .author {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--accent); /* Change to accent color */
+  background-color: var(--accent);
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: var(--accent-2); /* Change to accent-2 color */
+  background-color: var(--accent-2);
 }
 
 input:focus + .slider {
@@ -206,149 +214,9 @@ input:checked + .slider {
   background-color: var(--accent-3); 
 }
 
-@media screen and (max-width: 600px) {
+
   .switch {
     left: calc(100vw - 70px);
     top: calc(10vh - 10px); 
   }
-}
 
-
-@media screen and (min-width: 601px) {
-  .switch {
-    left: 94vw;
-    top: 10vh; 
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  header {
-    display: grid;
-    padding: 20px 40px;
-    grid-template-columns: 1fr 1fr;
-  }
-  nav {
-    padding-top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-self: end;
-  }
-
-  nav a {
-    color: var(--secondary);
-    padding: 0 10px;
-  }
-
-  .button-wrapper button {
-    border: 0;
-    background-color: transparent;
-    color: var(--secondary);
-  }
-
-  .button-wrapper button#closeNav {
-    display: none;
-  }
-  .button-wrapper button#openNav {
-    display: none;
-  }
-  .main-content {
-    display: grid;
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 40px 90px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "item-1 item-1 item-2"
-      "item-3 item-3 item-3";
-  }
-
-  .main-content :nth-child(1) {
-    grid-area: item-1;
-  }
-  .main-content :nth-child(2) {
-    grid-area: item-2;
-  }
-  .main-content :nth-child(3) {
-    grid-area: item-3;
-  }
-  .card {
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.1);
-  }
-}
-/* medium css end */
-
-/* larger css start */
-@media screen and (min-width: 1025px) {
-  header {
-    display: grid;
-    padding: 10px 70px;
-    grid-template-columns: 1fr 1fr;
-  }
-  nav {
-    padding-top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-self: end;
-  }
-
-  nav a {
-    color: var(--secondary);
-    padding: 0 10px;
-  }
-
-  .button-wrapper button {
-    border: 0;
-    background-color: transparent;
-    color: var(--secondary);
-  }
-
-  .button-wrapper button#closeNav {
-    display: none;
-  }
-  .button-wrapper button#openNav {
-    display: none;
-  }
-  .hero-banner .hero-image {
-    padding: 70px;
-  }
-  .hero-banner .hero-image h1 {
-    font-size: 5em;
-  }
-  .hero-banner .hero-image a {
-    font-size: 2em;
-    margin-bottom: 70px;
-  }
-
-  .main-content {
-    display: grid;
-    column-gap: 20px;
-    row-gap: 20px;
-    padding: 40px 90px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "item-1 item-1 item-2"
-      "item-3 item-3 item-3";
-  }
-
-  .main-content :nth-child(1) {
-    grid-area: item-1;
-  }
-  .main-content :nth-child(2) {
-    grid-area: item-2;
-  }
-  .main-content :nth-child(3) {
-    grid-area: item-3;
-  }
-  .card {
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.1);
-  }
-}
-/* larger css end */

@@ -16,16 +16,18 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     const checkbox = document.querySelector('.switch input[type="checkbox"]');
-    const cards = document.querySelectorAll('.card');
+ 
     
     checkbox.addEventListener('change', function() {
         if (this.checked) {
+            document.body.style.backgroundColor = '#e6e6ea';
+            document.body.style.color = '#222'; 
+            document.body.classList.add('light-mode');
+        } else {
             document.body.style.backgroundColor = '#222';
             document.body.style.color = '#fff'; 
+            document.body.classList.remove('light-mode');
             document.body.classList.add('dark-mode');
-        } else {
-            document.body.style.backgroundColor = '#fff';
-            document.body.style.color = '#222'; 
         }
     });
 });
