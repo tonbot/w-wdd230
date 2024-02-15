@@ -73,5 +73,23 @@
       top: 10vh; 
     }
 
+    footer > .address-wrapper {
+      padding: 40px 0px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    footer > .address-wrapper > :nth-child(1){
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+  
+   .address-wrapper > :nth-child(1) > img{
+      width: 90px;
+      height: auto;
+    }
+  
+
+
   }
   /* larger css end */

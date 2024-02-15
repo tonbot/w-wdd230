@@ -5,7 +5,10 @@
   --accent-2: #4da1a9;
   --accent-3: #cc3f59;
 }
-
+h1,h2,h3,h4,h5,h6{
+  height: fit-content;
+  overflow-y: hidden;
+}
 * {
   padding: 0;
   margin: 0;
@@ -77,8 +80,13 @@ nav a:hover {
 .hero-banner {
   background-color: #000;
   color: #fff;
-  background-image: url("/wdd230/chamber/images/ekiti-hero-image.jpg");
+  /* background-image: url("/wdd230/chamber/images/ekiti-hero-image.jpg"); */
+  background-image: url("/chamber/images/ekiti-hero-image.webp");
   height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .hero-banner .hero-image {
@@ -95,7 +103,9 @@ nav a:hover {
 
 .hero-banner .hero-image h1 {
   text-align: center;
-  height: fit-content;
+  width: 80%;
+  height: 100px;
+  text-wrap: wrap;
   padding: 10px;
   font-size: 1.5em;
 }
@@ -113,20 +123,6 @@ nav a:hover {
   background-color: var(--primary);
 }
 /* section hero banner ends*/
-
-footer .more-nav {
-  background-color: var(--primary);
-  padding: 10px 70px;
-  color: #fff;
-  text-align: center;
-}
-footer .author {
-  background-color: var(--accent-3);
-  padding: 10px 70px;
-  color: #fff;
-  text-align: center;
-  line-height: 30px;
-}
 
 .main-content {
   display: grid;
@@ -220,3 +216,68 @@ input:checked + .slider {
     top: calc(10vh - 10px); 
   }
 
+  footer .author {
+    background-color: var(--accent-3);
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.7em;
+  }
+
+
+  footer > .address-wrapper {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--primary);
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+   
+  }
+
+  footer > .address-wrapper > :nth-child(1){
+    display: flex;
+    color: #fff;
+    font-size: 1em;
+    padding: 0 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+
+ .address-wrapper > :nth-child(1) > img{
+    width: 60px;
+    height: auto;
+  }
+
+  .address-wrapper > :nth-child(1) > div  {
+    font-weight:300;
+    font-size: small;
+    padding: 0 20px;
+    width:80%;
+  }
+
+  footer > .address-wrapper > :nth-child(2){
+    text-align: center;
+    color: white;
+  }
+
+
+
+  /* footer > .address-wrapper {
+    background-color: var(--primary);
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer > .address-wrapper :nth-child(1){
+    display: flex;
+  } */
