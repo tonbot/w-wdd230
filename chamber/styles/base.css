@@ -80,8 +80,8 @@ nav a:hover {
 .hero-banner {
   background-color: #000;
   color: #fff;
-  /* background-image: url("/wdd230/chamber/images/ekiti-hero-image.jpg"); */
-  background-image: url("/chamber/images/ekiti-hero-image.webp");
+   background-image: url("/wdd230/chamber/images/ekiti-hero-image.webp"); 
+  /* background-image: url("/chamber/images/ekiti-hero-image.webp"); */
   height: fit-content;
   background-repeat: no-repeat;
   background-size: cover;
