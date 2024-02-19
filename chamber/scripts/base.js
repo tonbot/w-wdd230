@@ -16,7 +16,8 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     const checkbox = document.querySelector('.switch input[type="checkbox"]');
- 
+    const weather = document.querySelector('.weather-content');
+
     
     checkbox.addEventListener('change', function() {
         if (this.checked) {

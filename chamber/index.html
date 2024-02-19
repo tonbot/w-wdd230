@@ -15,8 +15,9 @@
     <meta property="og:url" content="https://tonbot.github.io/w-wdd230/">
     <title>Omisanaja Chamber of Commerce</title>
     <link href="styles/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet" defer>
-    <link href="styles/base.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
@@ -29,11 +30,11 @@
 </head>
 
 <body>
-    <span class="switch" for="switch">
+    <label class="switch" for="switch">
         <label for="switch">switch</label>
         <input type="checkbox" checked id="switch">
         <span class="slider round"></span>
-    </span>
+    </label>
     <header>
         <div class="logo-wrapper">
             <img src="images/ekiti-logo-small.webp" alt="ekiti-logo" width="30px" height="30px">
@@ -65,7 +66,16 @@
                 <h2>Events</h2>
             </section>
             <section class="card item-2">
-                <h2>Weather</h2>
+                <h2>Current Weather</h2>
+              
+                <div class="weather-content">
+                    <img src="images/weather.webp"  alt="" width="90" height="84">
+                    <div>
+                        <div id="temperature">Temperature: <span>60</span></div>
+                        <div id="wind-speed">Wind Speed: <span>5</span>
+                        <div id="wind-chill">Wind Chill: </div>
+                    </div>
+                </div>
             </section>
             <section class="card item-3">
                 <h2>Adverts</h2>
@@ -97,6 +107,8 @@
     </footer>
     <script src="scripts/base.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+
 </body>
 
 </html>

@@ -4,6 +4,15 @@
       padding: 20px 40px;
       grid-template-columns: 1fr 1fr;
     }
+    .hero-banner {
+       background-image: url("/wdd230/chamber/images/hero-image-medium.webp");  
+      /* background-image: url("/chamber/images/hero-image-medium.webp");  */
+      width: 100vw;
+      height: 683px;
+    }
+    .hero-banner .hero-image h1 {
+      font-size: 2em;
+    }
     nav {
       padding-top: 0;
       display: flex;
@@ -49,6 +58,7 @@
     .main-content :nth-child(3) {
       grid-area: item-3;
     }
+
     .card {
       padding: 20px;
       border-radius: 20px;
