@@ -14,3 +14,17 @@
     nav.style.display = 'none';
   }
 
+        if (typeof(Storage) !== "undefined") {
+   
+            if (localStorage.getItem("pageVisitCount")) {
+                let count = parseInt(localStorage.getItem("pageVisitCount")) + 1;
+                localStorage.setItem("pageVisitCount", count);
+                document.getElementById("time-visited").textContent = count;
+            } else {
+                localStorage.setItem("pageVisitCount", 1);
+                document.getElementById("time-visited").textContent = 1;
+            }
+        } else {
+            document.getElementById("time-visited").textContent = "Sorry, your browser does not support Web Storage.";
+        }
+ 

@@ -15,10 +15,10 @@
     <meta property="og:url" content="https://tonbot.github.io/wdd230/">
     <title>Ajiboye Toyin Theophilus WDD 230 - Web Frontend Development</title>
     <link href="styles/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
     <link rel="shortcut icon" href="icon.ico">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <style>
         .active {
             color: red;
@@ -85,7 +85,7 @@
         </section>
         <section class="card">
             <h3>Information</h3>
-
+            <p>Page visits: <span id="time-visited"></span></p>
         </section>
         <section class="card">
             <iframe title="map-frame"
