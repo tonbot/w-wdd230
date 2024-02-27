@@ -24,11 +24,12 @@ body {
 }
 /* section header start */
 header {
-  display: grid;
+
   background-color: var(--primary);
   color: var(--secondary);
   padding: 10px 20px;
-  position: fixed;
+  /* position: fixed; */
+  display: grid;
   width: 100vw;
   will-change: transform;
 }
@@ -84,7 +85,7 @@ nav a:hover {
    /* background-image: url("/chamber/images/hero-image-small.webp");  */
   /* height: fit-content; */
   width: 100vw;
-  height: 400px;
+  height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -99,16 +100,17 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  padding-top: 100px;
+
 }
 
 .hero-banner .hero-image h1 {
+  display: flex;
+  align-items: center;
   text-align: center;
-  width: 80%;
+  width: 100%;
   height: 100px;
-  text-wrap: wrap;
-  padding: 10px;
-  font-size: 1.5em;
+  padding: 20px;
+  font-size: 1em;
 }
 
 .hero-banner .hero-image a {
@@ -125,7 +127,7 @@ nav a:hover {
 }
 /* section hero banner ends*/
 
-.main-content {
+.home-main {
   display: grid;
   column-gap: 20px;
   row-gap: 20px;
@@ -300,3 +302,73 @@ input:checked + .slider {
   footer > .address-wrapper :nth-child(1){
     display: flex;
   } */
+
+
+    /*** discover style***/
+    .discover-main {
+      
+    }
+   
+    .discover-main .main-content{
+      width:100%;
+      padding: 20px;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px ;
+    } 
+     
+    .discover-main .main-content .img-card{
+      width: 100%;
+     
+      background-color: #fff;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    } 
+    .img-card:hover.img-card{
+       background-color: #000;
+       transition: background 2s ease-in-out;
+    }
+    .img-card:hover > img{
+      text-align: center;
+       margin-top: 70px;
+       transition: margin-top 2s ease-in-out;
+    }
+    .img-card:hover > p{
+      display: none;
+    } 
+
+    .img-card p{
+      font-size: 0.6em;
+      padding: 5px;
+    }
+  
+    .side-bar{
+      padding: 20px 20px;
+    
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .side-bar-card{
+      padding: 10px 6px;
+      background-color: #fff ;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .side-bar-card h1{
+      font-size: 1em;
+      text-align: center;
+      border-bottom: 1px solid #d1d0d0;
+    }
+    .side-bar-card a{
+      display: block;
+      line-height: 1.5;
+    }
+    .we-have{
+      padding: 20px 20px;
+      text-align: center;
+      font-size: 1em;
+    }
+    /*** discover style***/

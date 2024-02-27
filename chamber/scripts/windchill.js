@@ -19,7 +19,5 @@ function calculateWindChill(temperature, windSpeed) {
   }
   
   // Call the updateWindChill function when the page loads
-  window.onload = function() {
-    updateWindChill();
-  };
+
   

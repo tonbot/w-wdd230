@@ -37,7 +37,7 @@
     .button-wrapper button#openNav {
       display: none;
     }
-    .main-content {
+    .home-main {
       display: grid;
       column-gap: 20px;
       row-gap: 20px;
@@ -48,14 +48,14 @@
         "item-1 item-1 item-2"
         "item-3 item-3 item-3";
     }
-  
-    .main-content :nth-child(1) {
+
+    .home-main :nth-child(1) {
       grid-area: item-1;
     }
-    .main-content :nth-child(2) {
+    .home-main :nth-child(2) {
       grid-area: item-2;
     }
-    .main-content :nth-child(3) {
+    .home-main :nth-child(3) {
       grid-area: item-3;
     }
 
@@ -66,8 +66,8 @@
     }
     
     .switch {
-      left:70vw;
-      top: 10vh; 
+      left:calc(100vw - 90px);
+      top: 12vh; 
     }
 
     footer > .address-wrapper {
@@ -85,6 +85,83 @@
       width: 90px;
       height: auto;
     }
+ 
+    /*** discover style***/
+     .discover-main {
+      display: grid;
+      grid-template-columns: 25% 75%;
+      grid-template-rows: auto;
+    }
+    .discover-main .side-bar{
+      width:100% ;
+      min-height: 70vh;
+    } 
 
+    .discover-main .main-content{
+      width:100%;
+      min-height: 70vh;
+      padding: 20px;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px ;
+    } 
+     
+    .discover-main .main-content .img-card{
+      width: 100%;
+      height: 250px;
+      background-color: #fff;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    } 
+    .img-card:hover.img-card{
+       background-color: #000;
+       transition: background 2s ease-in-out;
+    }
+    .img-card:hover > img{
+      text-align: center;
+       margin-top: 70px;
+       transition: margin-top 2s ease-in-out;
+    }
+    .img-card:hover > p{
+      display: none;
+    } 
+
+    .img-card p{
+      font-size: 0.9em;
+      padding: 5px;
+    }
+  
+    .side-bar{
+      padding: 20px 0;
+      padding-left: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .side-bar-card{
+      padding: 10px 6px;
+      background-color: #fff ;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .side-bar-card h1{
+      font-size: 1em;
+      text-align: center;
+      border-bottom: 1px solid #d1d0d0;
+    }
+    .side-bar-card a{
+      display: block;
+      line-height: 1.5;
+    }
+
+    .we-have{
+      padding: 20px 20px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    /*** discover style***/
   }
   /* medium css end */
+

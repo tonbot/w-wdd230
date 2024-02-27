@@ -23,8 +23,9 @@
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" defer>
     <style>
-        .active {
-            color: var(--accent);
+         .active {
+            background-color: var(--accent-3);
+            color: #fff;
         }
     </style>
 </head>
@@ -47,7 +48,7 @@
         </div>
         <nav>
             <a href="index.html" class="active">Home</a>
-            <a href="#" title="">Discover</a>
+            <a href="discover.html" title="">Discover</a>
             <a href="#" title="">Directory</a>
             <a href="#" title="">Join</a>
             <a href="#" title="">Join</a>
@@ -61,7 +62,7 @@
             </div>
         </div>
 
-        <div class="main-content">
+        <div class="home-main">
             <section class="card item-1">
                 <h2>Events</h2>
             </section>
@@ -108,7 +109,11 @@
     <script src="scripts/base.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/windchill.js"></script>
-
+    <script>
+          window.onload = function() {
+        updateWindChill();
+        };
+    </script>
 </body>
 
 </html>
