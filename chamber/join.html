@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ajiboye Toyin Theophilus">
+    <meta name="description"
+        content="Explore opportunities, connect with local businesses, and thrive with Omisanjana Chamber of Commerce. Discover valuable resources, events, and support for your business and community. Join us in fostering growth, innovation, and collaboration. Your success begins with Omisanjana Chamber of Commerce.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Omisanjana Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.nigeriapropertycentre.com/area-guides/beb2e014-6f7d-4cb0-ae56-72a5d44fac98.jpg">
+    <meta property="og:url" content="https://tonbot.github.io/w-wdd230/">
+    <title>Omisanaja Chamber of Commerce</title>
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" defer>
+    <style>
+        .active {
+            background-color: var(--accent-3);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <label class="switch" for="switch">
+        <label for="switch" hidden>switch</label>
+        <input type="checkbox" checked id="switch">
+        <span class="slider round"></span>
+    </label>
+    <header>
+        <div class="logo-wrapper">
+            <img src="images/ekiti-logo-small.webp" alt="ekiti-logo" width="30px" height="30px">
+            <div class="button-wrapper">
+                <button onclick="openNav()" id="openNav" title="open-navigation-menu"><i
+                        class="fa fa-bars"></i></button>
+                <button type="button" onclick="closeNav()" id="closeNav" title="close-navigation-menu"><i
+                        class="fa fa-close"></i></button>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="discover.html" title="">Discover</a>
+            <a href="#" title="">Directory</a>
+            <a href="#" title="">Join</a>
+            <a href="#" title="">Join</a>
+        </nav>
+    </header>
+    <main class="join-main">
+        <div class="title-wrapper">
+            <img src="images/ekiti-logo-small.webp" alt="your logo here"  width="60" height="60">
+            <div>
+                <h1>MEMBERSHIP REGISTRATION FORM</h1>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <div class="larger-form-container">
+                <div class="note"> A red asterisk (*) indicates a required field.</div>
+                <form action="" method="post">
+                    <label for="fname">FirsName<em>*</em></label>
+                    <input type="text" name="fname" id="fname" required>
+                    <label for="lname">LastName<em>*</em></label>
+                    <input type="text" name="lname" id="lname" required>
+                    <label for="position">Position<em>*</em></label>
+                    <input type="text" name="position" id="position" required pattern="[A-Za-z -]{7,}"
+                        title="Please enter a valid title or position (minimum of seven characters consisting of alphabets, hyphens, and spaces)">
+                    <label for="email">Email<em>*</em></label>
+                    <input type="email" name="email" id="email" placeholder="myemail@gamil.com">
+                    <label for="phone">Phone Numer<em>*</em></label>
+                    <input type="tel" name="phone" id="phone" placeholder="myemail@gamil.com">
+                    <label for="business_name">Business Name<em>*</em></label>
+                    <input type="text" name="business_name" id="business_name" required>
+                    <label for="membership_level">Membership Level:</label>
+                    <select name="membership_level" id="membership_level">
+                        <option value="NP">NP Membership (No Fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                    <label for="description">Description:</label>
+                    <textarea name="description" id="description" rows="4" cols="50"></textarea>
+                    <input type="hidden" name="formLoadedTime" id="formLoadedTime">
+                    <div class="btn-wrapper">
+                        <button type="button" aria-label="Submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="level-description-wrapper">
+                   <div class="level-description">
+                        <h2>Our Membership Level</h2>
+                        <div>
+                            <h3>NP Membership (No Fee)</h3>
+                            <p class="description-content">Join our community as a Non-Profit Member and enjoy the benefits of membership without any fees. Connect with other non-profit organizations, access resources, and participate in events to support your cause</p>
+                        </div>
+                        <div>
+                            <h3>Bronze Membership</h3>
+                            <p class="description-content">Upgrade to Bronze Membership to unlock additional benefits and opportunities. Gain visibility for your business, network with other members, and access exclusive events and workshops tailored to help your business grow.</p>
+                        </div>
+                        <div>
+                            <h3>Silver Membership</h3>
+                            <p class="description-content">Elevate your membership experience with our Silver Membership package. Enjoy enhanced networking opportunities, premium business resources, and priority access to chamber events and programs. Take your business to the next level with the support of our chamber community.</p>
+                        </div>
+                        <div>
+                            <h3>Gold Membership</h3>
+                            <p class="description-content">Experience the highest level of membership with our Gold Membership package. Receive VIP treatment with personalized support, exclusive invitations to leadership events, and prominent recognition as a key supporter of the chamber. Maximize your business's potential and make a significant impact in our community with Gold Membership.</p>
+                        </div>
+                   </div>
+            </div>
+           
+        </div>
+    </main>
+    <footer>
+        <div class="address-wrapper">
+            <div>
+                <picture>
+                    <source srcset="images/ekiti-logo-small.webp" media="(max-width: 600px)">
+                    <source srcset="images/ekiti-logo-small.webp" media="(min-width: 601px)">
+                    <img src="images/ekiti-logo-small.webp" width="60px" height="60px" alt="chamber of commerce logo">
+                </picture>
+                <div>
+                    <h2>Omisanjana chamber of commerce</h2>
+                    <h3>No 10 the penthouse Omisanjana</h3>
+                </div>
+            </div>
+            <div>
+                <h4>info@omisanjanacc.com</h4>
+                <h4>+234 88801356</h4>
+            </div>
+        </div>
+        <div class="author">
+            <p>&copy; <span id="year"></span> | Toyin Theophilus Ajiboye | <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script>
+        window.onload = function() {
+          var formLoadedTime = document.getElementById('formLoadedTime');
+          formLoadedTime.value = Date.now();
+        };
+      </script>
+      
+</body>
+
+</html>
