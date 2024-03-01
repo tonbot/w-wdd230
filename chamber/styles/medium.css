@@ -180,5 +180,17 @@
     font-size: 1.5em;
   }
   /* title wrapper ends here */
+
+  /*thank you start */
+.thankyou-main {
+  padding: 50px 40px; 
+  background-color: #fff;
+}
+
+.thankyou-main > div > h1{
+  font-size: 1.6em;
+}
+/*thank you end */
+
 }
 /* medium css end */

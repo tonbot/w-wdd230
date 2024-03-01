@@ -53,8 +53,7 @@
             <a href="index.html" class="active">Home</a>
             <a href="discover.html" title="">Discover</a>
             <a href="#" title="">Directory</a>
-            <a href="#" title="">Join</a>
-            <a href="#" title="">Join</a>
+            <a href="join.html" title="" class="active">Join</a>
         </nav>
     </header>
     <main class="join-main">
@@ -67,7 +66,7 @@
         <div class="form-wrapper">
             <div class="larger-form-container">
                 <div class="note"> A red asterisk (*) indicates a required field.</div>
-                <form action="" method="post">
+                <form action="thankyou.html" method="get" autocomplete>
                     <label for="fname">FirsName<em>*</em></label>
                     <input type="text" name="fname" id="fname" required>
                     <label for="lname">LastName<em>*</em></label>
@@ -78,7 +77,7 @@
                     <label for="email">Email<em>*</em></label>
                     <input type="email" name="email" id="email" placeholder="myemail@gamil.com">
                     <label for="phone">Phone Numer<em>*</em></label>
-                    <input type="tel" name="phone" id="phone" placeholder="myemail@gamil.com">
+                    <input type="tel" name="phone" id="phone" placeholder="">
                     <label for="business_name">Business Name<em>*</em></label>
                     <input type="text" name="business_name" id="business_name" required>
                     <label for="membership_level">Membership Level:</label>
@@ -92,7 +91,7 @@
                     <textarea name="description" id="description" rows="4" cols="50"></textarea>
                     <input type="hidden" name="formLoadedTime" id="formLoadedTime">
                     <div class="btn-wrapper">
-                        <button type="button" aria-label="Submit">Submit</button>
+                        <button type="submit" aria-label="Submit">Submit</button>
                     </div>
                 </form>
             </div>

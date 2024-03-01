@@ -215,5 +215,15 @@
   .level-description div {
     margin-bottom: 40px;
   }
+
+  /*thank you start */
+  .thankyou-main {
+    padding: 50px 70px;
+    background-color: #fff;
+  }
+  .thankyou-main > div > h1 {
+    font-size: 1.9em;
+  }
+  /*thank you end */
 }
 /* larger css end */

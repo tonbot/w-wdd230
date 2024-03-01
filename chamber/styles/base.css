@@ -222,13 +222,16 @@ input:checked + .slider {
 }
 
 footer .author {
-  background-color: var(--accent-3);
+  background-color: var(--secondary);
   padding: 10px 0;
-  color: #fff;
+  color: #000 ;
   text-align: center;
   line-height: 30px;
   font-size: 0.7em;
 }
+/* span#year{
+  color: #fff;
+} */
 
 footer > .address-wrapper {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -256,6 +259,7 @@ footer > .address-wrapper > :nth-child(1) {
 .address-wrapper > :nth-child(1) > img {
   width: 60px;
   height: auto;
+ 
 }
 
 .address-wrapper > :nth-child(1) > div {
@@ -447,3 +451,25 @@ footer > .address-wrapper > :nth-child(2) {
   display: none;
 }
 /*form wrapper ends*/
+
+/*thank you start */
+.thankyou-main {
+  padding: 50px 20px; 
+  background-color: #fff;
+}
+
+.thankyou-main > div{
+  background: var(--secondary);
+  text-align: center;
+  padding: 30px 20px ;
+  padding-bottom: 50px;
+}
+
+.thankyou-main > div > h1{
+  font-size: 1em;
+}
+
+.thankyou-main > div > h1::before{
+   content: "✅";
+}
+/*thank you end */
