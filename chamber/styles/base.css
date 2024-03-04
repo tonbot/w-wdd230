@@ -390,6 +390,9 @@ footer > .address-wrapper > :nth-child(2) {
   text-align: center;
   padding: 20px;
   padding-top: 30px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .title-wrapper > div h1 {
   font-size: 1.5em;
@@ -400,6 +403,9 @@ footer > .address-wrapper > :nth-child(2) {
 .form-wrapper {
   padding: 50px 40px;
   background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .note {
@@ -459,10 +465,12 @@ footer > .address-wrapper > :nth-child(2) {
 }
 
 .thankyou-main > div{
-  background: var(--secondary);
+  background: #fff;
   text-align: center;
   padding: 30px 20px ;
   padding-bottom: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .thankyou-main > div > h1{
@@ -471,5 +479,10 @@ footer > .address-wrapper > :nth-child(2) {
 
 .thankyou-main > div > h1::before{
    content: "✅";
+}
+
+.thankyou-main > div > p{
+  font-size: 18px;
+  color: #666;
 }
 /*thank you end */
