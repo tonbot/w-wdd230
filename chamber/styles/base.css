@@ -443,7 +443,7 @@ footer > .address-wrapper > :nth-child(2) {
 .form-wrapper .btn-wrapper {
   width: 100%;
   padding: 20px 0;
-  border: 1px 1px 1px 1px rgba(0, 0, 0, 0.9);
+  /* border: 1px 1px 1px 1px rgba(0, 0, 0, 0.9); */
 }
 .form-wrapper .btn-wrapper button {
   width: 100%;
