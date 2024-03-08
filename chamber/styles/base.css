@@ -453,8 +453,20 @@ footer > .address-wrapper > :nth-child(2) {
   border: 0;
 }
 
-.level-description-wrapper{
-  display: none;
+.level-description {
+  background-color: var(--secondary);
+  padding: 20px;
+}
+
+.level-description h2 {
+  padding: 5px 0;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.level-description div {
+  margin-bottom: 40px;
 }
 /*form wrapper ends*/
 

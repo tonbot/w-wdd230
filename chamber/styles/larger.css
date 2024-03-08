@@ -201,20 +201,6 @@
     display: inline-block;
     /* background-color: aqua; */
   }
-  .level-description {
-    background-color: var(--secondary);
-    padding: 20px;
-  }
-
-  .level-description h2 {
-    padding: 5px 0;
-    border-bottom: 1px solid #000;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .level-description div {
-    margin-bottom: 40px;
-  }
 
   /*thank you start */
   .thankyou-main {
@@ -224,6 +210,5 @@
   .thankyou-main > div > h1 {
     font-size: 1.9em;
   }
-  /*thank you end */
 }
-/* larger css end */
+
