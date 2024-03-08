@@ -131,6 +131,16 @@
     margin-top: 70px;
     transition: margin-top 2s ease-in-out;
   }
+  .img-card:hover.img-card {
+    background-color: #000;
+    transition: background 2s ease-in-out;
+  }
+  .img-card:hover > img {
+    text-align: center;
+    margin-top: 70px;
+    transition: margin-top 2s ease-in-out;
+  }
+
   .img-card:hover > p {
     display: none;
   }

@@ -322,22 +322,15 @@ footer > .address-wrapper > :nth-child(2) {
 
 .discover-main .main-content .img-card {
   width: 100%;
-
   background-color: #fff;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-.img-card:hover.img-card {
-  background-color: #000;
-  transition: background 2s ease-in-out;
+.img-card img{
+  width: 100%;
+  height: auto;
 }
-.img-card:hover > img {
-  text-align: center;
-  margin-top: 70px;
-  transition: margin-top 2s ease-in-out;
-}
-.img-card:hover > p {
-  display: none;
-}
+
+
 
 .img-card p {
   font-size: 0.6em;
@@ -497,4 +490,3 @@ footer > .address-wrapper > :nth-child(2) {
   font-size: 18px;
   color: #666;
 }
-/*thank you end */
