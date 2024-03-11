@@ -489,3 +489,75 @@ footer > .address-wrapper > :nth-child(2) {
   font-size: 18px;
   color: #666;
 }
+
+
+
+/* Styles for buttons */
+button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #000;
+}
+
+.buttonContainer{
+  text-align: center;
+  margin-top: 40px;
+}
+
+#member-container{
+   padding: 20px;
+  text-align: center;
+}
+/* Styles for grid view */
+#member-container.gridView {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Styles for list view */
+#member-container.listView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  row-gap: 20px;
+}
+
+.memberCard {
+  /* Styles for member cards */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: fit-content; 
+  padding: 20px;
+}
+
+.memberCard h2 {
+  margin-top: 0;
+}
+
+.memberCard p {
+  margin: 5px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #member-container.gridView {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+

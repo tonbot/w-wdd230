@@ -1,0 +1,39 @@
+[
+    {
+      "name": "ABC Company",
+      "address": "123 Main St, Cityville",
+      "phone": "123-456-7890",
+      "website": "https://www.abc.com",
+      "image": "abc.jpg",
+      "membership": "Gold",
+      "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "XYZ Corporation",
+      "address": "456 Elm St, Townsville",
+      "phone": "987-654-3210",
+      "website": "https://www.xyzcorp.com",
+      "image": "xyz.jpg",
+      "membership": "Silver",
+      "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "name": "123 Industries",
+      "address": "789 Oak St, Villageton",
+      "phone": "555-123-4567",
+      "website": "https://www.123industries.com",
+      "image": "123.jpg",
+      "membership": "Bronze",
+      "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "name": "LMN Enterprises",
+      "address": "321 Pine St, Hamletville",
+      "phone": "444-987-6543",
+      "website": "https://www.lmnent.com",
+      "image": "lmn.jpg",
+      "membership": "Gold",
+      "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  ]
+  

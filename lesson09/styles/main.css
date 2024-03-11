@@ -1,0 +1,51 @@
+/* HTML Selectors */
+body {
+    font-family: 'Kalam', cursive;
+    padding: 5% 5%;
+    margin: 0;
+
+}
+
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: blue;
+    color: #fff;
+    padding: 5px 25%;
+    border-radius: 10px;
+
+}
+
+.main-footer{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.main-header img{
+    width: 8rem;
+    height: auto;
+}
+
+.main-header :nth-child(2){
+    font-size:3.4rem;
+}
+
+section {
+    padding: 10px;
+}
+section h2 {
+    font-size: x-large;
+}
+
+section ul li {
+    font-size: 1.3rem;
+}
+
+
+
+
