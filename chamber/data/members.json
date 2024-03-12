@@ -1,39 +1,59 @@
 [
     {
-      "name": "ABC Company",
-      "address": "123 Main St, Cityville",
-      "phone": "123-456-7890",
-      "website": "https://www.abc.com",
-      "image": "abc.jpg",
+      "name": "Green World International",
+      "address": "No 2 Egbewa Quarters Beside Wisdom Foundation Schools Off Ilawe Road, Ado Ekiti, Ekiti Nigeria",
+      "phone": "0803 067 7171",
+      "website": "https://greenworld.com.ng",
+      "image": "green-world.jpg",
       "membership": "Gold",
-      "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "otherInfo": ""
     },
     {
-      "name": "XYZ Corporation",
-      "address": "456 Elm St, Townsville",
-      "phone": "987-654-3210",
-      "website": "https://www.xyzcorp.com",
-      "image": "xyz.jpg",
+      "name": "MTN Office Ado Ekiti",
+      "address": "No.11 Iyin Road, Beside Captain Cook, Ado Ekiti, Ekiti State",
+      "phone": "0803 100 0180",
+      "website": "https://www.mtnonline.com/",
+      "image": "mtn.jpg",
       "membership": "Silver",
-      "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "otherInfo": ""
     },
     {
-      "name": "123 Industries",
-      "address": "789 Oak St, Villageton",
-      "phone": "555-123-4567",
-      "website": "https://www.123industries.com",
-      "image": "123.jpg",
+      "name": "Interktrex Technologies",
+      "address": "Road 1, Egbewa, Area, ilawe road, Ado Ekiti, Ekiti state",
+      "phone": "0816 309 2520",
+      "website": "interktrexgroup2021@gmail.com",
+      "image": "interk.jpg",
       "membership": "Bronze",
-      "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "otherInfo": ""
     },
     {
-      "name": "LMN Enterprises",
-      "address": "321 Pine St, Hamletville",
-      "phone": "444-987-6543",
-      "website": "https://www.lmnent.com",
+      "name": "AB Communication",
+      "address": "Shop 11, Olushola Shopping Complex, Ado Ekiti, Ekiti",
+      "phone": "0810 703 2459",
+      "website": "No website",
       "image": "lmn.jpg",
       "membership": "Gold",
-      "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      "otherInfo": ""
+    },
+    {
+      "name": "Ade Ventures",
+      "address": "Beside Irewolede Housing Estate, Along Ilawe Road, Ado Ekiti, Ekiti",
+      "phone": " 0816 011 7510",
+      "website": "No website",
+      "image": "lmn.jpg",
+      "membership": "Gold",
+      "otherInfo": ""
+    },
+    {
+      "name": "Ajayi Sawmill",
+      "address": "No. 16 Bashiri Street, Fajuyi Park, Ado Ekiti, Ekiti",
+      "phone": "0810 703 2459",
+      "website": "No website",
+      "image": "lmn.jpg",
+      "membership": "Gold",
+      "otherInfo": ""
     }
+
+  
   ]
   
