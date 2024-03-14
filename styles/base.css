@@ -131,8 +131,15 @@ a:hover {
   color: #fff;
 }
 
+.weather-details{
+display: flex;
+align-items: center;
+padding-bottom: 30px 0;
+}
 
-
+.weather-details span{
+   padding: 0 3px;
+  }
 
 
 /* Responsive Styles */
@@ -205,4 +212,7 @@ a:hover {
   #openNav {
     display: none;
   }
+  .weather-details span{
+    padding: 0 7px;
+   }
 }
