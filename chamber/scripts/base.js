@@ -83,3 +83,19 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleView('gridView');
 });
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     var today = new Date();
+//     var dayOfWeek = today.getDay(); // 0 (Sunday) to 6 (Saturday)
+
+//     // Check if it's Monday, Tuesday, or Wednesday
+//     if (dayOfWeek >= 1 && dayOfWeek <= 3) {
+//         var banner = document.getElementById("chamberBanner");
+//         banner.style.display = "block";
+
+//         // Add event listener to close the banner
+//         var closeBtn = document.getElementById("closeBannerBtn");
+//         closeBtn.addEventListener("click", function() {
+//             banner.style.display = "none";
+//         });
+//     }
+// });

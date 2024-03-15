@@ -293,7 +293,19 @@ footer > .address-wrapper > :nth-child(2) {
 .weather-content > div {
   padding-left: 20px;
 }
-
+.weather-content img {
+  min-height: 84px !important;
+  min-width: 90px !important;
+}
+#forecast {
+  padding-top: 20px;
+}
+#forecast ul{
+  padding: 10px 0;
+}s
+#forecast ul li{
+  padding: 10px 0;
+}
 /* footer > .address-wrapper {
     background-color: var(--primary);
     padding: 10px 5px;
@@ -553,6 +565,32 @@ button:hover {
 .memberCard p {
   margin: 5px 0;
 }
+
+
+.banner {
+  display: none;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.banner p {
+  margin: 0;
+}
+
+#closeBannerBtn {
+  background-color: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+}
+
+
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
