@@ -62,6 +62,11 @@
             </div>
         </div>
 
+        <div id="banner" class="banner">
+            <p>Join us for the chamber of commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+            <button id="closeBtn" class="close-btn">Close</button>
+        </div>
+
         <div class="home-main">
             <section class="card item-1">
                 <h2>Events</h2>
@@ -72,10 +77,16 @@
                 <div class="weather-content">
                     <img src="images/weather.webp"  alt="" width="90" height="84">
                     <div>
-                        <div id="temperature">Temperature: <span>60</span></div>
-                        <div id="wind-speed">Wind Speed: <span>5</span>
-                        <div id="wind-chill">Wind Chill: </div>
+                        <div id="temperature"></div>
+                        <div id="description"></span>
                     </div>
+
+                    <div id="forecast">
+                        <h3>3-Day Forecast</h3>
+                        <ul id="forecast-list">
+                        </ul>
+                      </div>
+
                 </div>
             </section>
             <section class="card item-3">
@@ -110,9 +121,9 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/windchill.js"></script>
     <script>
-          window.onload = function() {
-        updateWindChill();
-        };
+        //   window.onload = function() {
+        // updateWindChill();
+        // };
     </script>
 </body>
 
