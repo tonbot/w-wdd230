@@ -4,6 +4,7 @@
   --accent: #4da1a9;
   --accent-2: #4da1a9;
   --accent-3: #cc3f59;
+  --accent-3-dark:#a33247;
 }
 h1,
 h2,
@@ -73,11 +74,13 @@ nav a {
 
 a {
   text-decoration: none;
+  padding-left: 20px;
 }
 
 nav a:hover {
-  background-color: var(--accent-3);
+  background-color: var(--accent-3-dark);
   color: var(--secondary);
+  border-radius: 5px;
 }
 /* section header ends */
 
@@ -139,10 +142,10 @@ nav a:hover {
 
 .card {
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #222;
   color: #fff;
-  box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Dark mode color scheme */
@@ -162,6 +165,7 @@ nav a:hover {
   width: 60px;
   height: 34px;
   z-index: 9000;
+
 }
 
 .switch input {
@@ -286,23 +290,29 @@ footer > .address-wrapper > :nth-child(2) {
   } */
 
 .weather-content {
-  display: flex;
   align-items: center;
   font-weight: 300;
 }
-.weather-content > div {
+.current-weather-child-1{
+  display: flex;
+  align-items: center;
+}
+
+.current-weather-child-1 img {
+  min-height: 74px !important;
+  min-width: 80px !important;
+}
+
+.current-weather-child-1 > div {
   padding-left: 20px;
 }
-.weather-content img {
-  min-height: 84px !important;
-  min-width: 90px !important;
-}
+
 #forecast {
   padding-top: 20px;
 }
 #forecast ul{
   padding: 10px 0;
-}s
+}
 #forecast ul li{
   padding: 10px 0;
 }
