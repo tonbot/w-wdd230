@@ -24,6 +24,7 @@
             document.body.style.backgroundColor = '#e6e6ea';
             document.body.style.color = '#222'; 
             document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
         } else {
             document.body.style.backgroundColor = '#222';
             document.body.style.color = '#fff'; 

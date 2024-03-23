@@ -602,6 +602,64 @@ button:hover {
 
 
 
+
+.card.item-1 {
+  /* background-color: #f9f9f9; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+  margin-bottom: 20px;
+}
+
+.event p {
+  margin-bottom: 10px;
+}
+
+
+
+.card.item-3 {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.advert {
+  margin-bottom: 20px; /* Adds margin between adverts */
+}
+
+.advert p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  color: #fff ;
+}
+
+.light-mode.btn{
+  color: #000;
+}
+
+.dark-mode.btn{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
   #member-container.gridView {
