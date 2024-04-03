@@ -1,0 +1,69 @@
+/* larger css start */
+@media screen and (min-width: 1025px) {
+  
+header > .contact-info{
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 10px 20px;
+}
+header > .nav-container{
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.nav-container h1{
+
+}
+
+.nav-container nav ul{
+  display: flex;
+  list-style: none;
+  justify-items: right;
+}
+
+.nav-container nav ul li{
+
+ margin-left: 10px;
+}
+
+.nav-container nav ul li a{
+  padding: 10px;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.nav-container nav ul li a:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.nav-toggle{
+  display: none;
+}
+
+.hero{
+  display: flex;
+  background-color: var(--accent-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+.footer .social-media > h2, .footer .footer-links > h2, .footer .footer-contact-info > h2{
+  font-size: 20px;
+  padding-bottom: 15px;
+  color: var(--accent1-color);
+}
+
+  }
+
