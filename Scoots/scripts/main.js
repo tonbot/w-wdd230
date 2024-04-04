@@ -14,6 +14,11 @@ function openNav() {
   }
 
 
+  function closeMessage() {
+    document.getElementById("closeable-message").style.display="none";
+    document.getElementById("nav-toggle").style.top="62px";
+  }
+
   const apiKey = "898a9d515472d0d0e3657b84cf2e937b";
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Ado, NG&appid=${apiKey}&units=metric`;
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Ado, NG&appid=${apiKey}&units=metric`;
@@ -58,6 +63,29 @@ fetch(forecastUrl)
       document.getElementById('tomorrow-forecast').textContent = `${temperatureAt3PM}°C`;
     } else {
       document.getElementById('tomorrow-forecast').textContent = 'Not available';
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching hourly forecast data:', error);
+  });
+
+
+fetch(forecastUrl)
+  .then(response => response.json())
+  .then(data => {
+ 
+    const today = new Date().getDate();
+
+    const todayForecast = data.list.filter(item => {
+      const forecastDate = new Date(item.dt * 1000); // Convert Unix timestamp to milliseconds
+      return forecastDate.getDate() === today;
+    });
+
+    if (todayForecast.length > 0) {
+      const maxTempToday = Math.max(...todayForecast.map(item => item.main.temp));
+      document.getElementById('today-max-temp').textContent = `${maxTempToday}°C`;
+    } else {
+      document.getElementById('today-max-temp').textContent = 'Not available';
     }
   })
   .catch(error => {

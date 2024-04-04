@@ -26,18 +26,22 @@
 
 <body>
     <!-- Header Section -->
-    <div class="nav-toggle">
-        <i class="fa fa-bars" id="openNav" onclick="openNav()"></i>
-        <i class="fa fa-close" id="closeNav" onclick="closeNav()"></i>
-    </div>
+ 
     <header>
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fa fa-bars" id="openNav" onclick="openNav()"></i>
+            <i class="fa fa-close" id="closeNav" onclick="closeNav()"></i>
+        </div>
+
         <div class="contact-info">
             <p>Contact us: +123-456-7890 | info@scootscozumel.com</p>
         </div>
-        <div class="closeable-message">
-            <p>Today's high temperature: 85°F</p>
-            <span class="close-btn">&times;</span>
+
+        <div class="closeable-message" id="closeable-message">
+            <p>Today's high temperature: <span id='today-max-temp'></span></p>
+            <span class="close-btn" onclick="closeMessage()">&times;</span>
         </div>
+
         <div class="nav-container">
             <h1>~Scoots~</h1>
             <nav>
@@ -49,6 +53,7 @@
                 </ul>
             </nav>
         </div>
+      
     </header>
 
     <!-- Hero Section -->

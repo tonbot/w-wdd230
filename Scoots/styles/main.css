@@ -5,6 +5,7 @@
   --accent-color: #ecebe4;
   --accent1-color: #daddd8;
   --accent2-color: #eef0f2;
+  --accent3-color: #b50c10;
 }
 
 * {
@@ -29,7 +30,7 @@ header > .contact-info {
 
 header > .closeable-message{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     align-items: center;
     padding: 10px 20px;
@@ -37,8 +38,19 @@ header > .closeable-message{
 }
 
 .closeable-message .close-btn{
+    display: flex;
     font-size: 20px;
+    width: 20px;
+    height: 20px;
+     background-color: var(--accent3-color);
+    /* background-color: var(--primary-color); */
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  
 }
+
 
 header > .nav-container {
   display: block;
@@ -116,10 +128,12 @@ header > .nav-container {
 }
 .hero-text a {
   padding: 20px;
-  background-color: #1c1c1c;
+  background-color: var(--accent3-color);
+  /* background-color: #1c1c1c; */
   color: var(--secondary-color);
   text-decoration: none;
   border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text a:hover {
@@ -219,7 +233,8 @@ ul {
 
 .contact .social-media ul li {
   width: 40px;
-  background-color: var(--primary-color);
+  background-color: var(--accent3-color);
+  /* background-color: var(--primary-color); */
   margin-left: 10px;
   border-radius: 4px;
 }
@@ -267,15 +282,14 @@ ul {
 .contact-form button {
   width: 100%;
   padding: 10px;
-  background-color: var(--primary-color);
+  background-color: var(--accent3-color);
   color: var(--secondary-color);
   border-radius: 5px;
+  border: none;
 }
 
 .contact-form button:hover {
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*weather info*/
@@ -328,7 +342,7 @@ ul {
 
   .map{
     text-align: center;
-    padding: 40px;
+    padding: 0 40px 80px 40px;
   }
   .map-container iframe{
     width: 100%;
