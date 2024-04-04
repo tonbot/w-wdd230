@@ -2,15 +2,14 @@
 @media screen and (min-width: 1025px) {
   
 header > .contact-info{
-  background-color: var(--accent2-color);
-  color: var(--primary-color);
+
   text-align: center;
   padding: 10px 20px;
+  font-size: 1em;
 }
+
 header > .nav-container{
   display: flex;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
@@ -30,13 +29,36 @@ header > .nav-container{
 
 .nav-container nav ul li a{
   padding: 10px;
-  color: var(--secondary-color);
   text-decoration: none;
 }
-.nav-container nav ul li a:hover{
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+
+header > .closeable-message{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 10px 40px;
+  font-size: 1em;
 }
+
+.closeable-message .close-btn{
+  display: flex;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.closeable-message .close-btn:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+
 
 .nav-toggle{
   display: none;
@@ -44,7 +66,7 @@ header > .nav-container{
 
 .hero{
   display: flex;
-  background-color: var(--accent-color);
+ 
   align-items: center;
   justify-content: space-between;
   padding: 0 80px;
@@ -59,7 +81,6 @@ header > .nav-container{
 .footer .social-media > h2, .footer .footer-links > h2, .footer .footer-contact-info > h2{
   font-size: 20px;
   padding-bottom: 15px;
-  color: var(--accent1-color);
 }
 
 
@@ -80,7 +101,6 @@ header > .nav-container{
 }
 
 .rental-services .card {
-  background-color: #fff;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
@@ -119,17 +139,13 @@ header > .nav-container{
 
 .contact .social-media ul li {
   width: 40px;
-  background-color: var(--primary-color);
+
   margin-left: 20px;
   border-radius: 4px;
 }
 
-.contact .social-media ul li a {
-  color: var(--secondary-color);
-}
-
 .contact .social-media ul li:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
 .contact-larger{
@@ -169,15 +185,11 @@ header > .nav-container{
 .contact-form button {
   width: 100%;
   padding: 10px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   border-radius: 5px;
 }
 
 .contact-form button:hover {
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+    color: var(--secondary-color);
 }
 
 
@@ -198,7 +210,6 @@ header > .nav-container{
 }
 
 .weather-data .card{
-    background-color: #e5e5e5;
     margin-bottom: 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -212,9 +223,7 @@ header > .nav-container{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-size: 1em;
-  background-color: var(--primary-color);
   padding:15px;
-  color: var(--secondary-color);
 }
 
 .weather-data .card p{
