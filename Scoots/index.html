@@ -34,6 +34,10 @@
         <div class="contact-info">
             <p>Contact us: +123-456-7890 | info@scootscozumel.com</p>
         </div>
+        <div class="closeable-message">
+            <p>Today's high temperature: 85°F</p>
+            <span class="close-btn">&times;</span>
+        </div>
         <div class="nav-container">
             <h1>~Scoots~</h1>
             <nav>
@@ -55,7 +59,7 @@
             <a href="reservations.html" class="btn">Make a Reservation</a>
         </div>
         <div class="hero-image">
-            <img src="images/hero-image.webp" loading="lazy" alt="" srcset="" width="350" height="327">
+            <img src="images/hero-image.webp" loading="lazy"  alt="hero-image" width="350" height="327">
         </div>
     </section>
 
@@ -63,11 +67,10 @@
     <!-- Summary Information -->
     <section class="rental-services">
         <h2>We Provide Quality Rental Services</h2>
-        <div class="Motor Scooters">
+        <div class="rental-summary">
             <div class="card">
                 <picture>
-                    <source srcset="images/Honda-Metropolitan-49cc-small.webp" media="(max-width: 600px)">
-                    <source srcset="image-large.jpg 2x" media="(min-width: 601px)">
+                    <source srcset="images/Honda-Metropolitan-49cc-small.webp">
                     <img src="image-small.jpg" loading="lazy" alt="Honda Metropolitan (49cc)" width="300" height="220">
                 </picture>
                 <div class="description">
@@ -77,8 +80,7 @@
             </div>
             <div class="card">
                 <picture>
-                    <source srcset="images/Honda-Dio-110cc-small.webp" media="(max-width: 600px)">
-                    <source srcset="image-large.jpg 2x" media="(min-width: 601px)">
+                    <source srcset="images/Honda-Dio-110cc-small.webp">
                     <img src="" loading="lazy" alt="Honda Dio (110cc)" width="300" height="221">
                 </picture>
                 <div class="description">
@@ -88,23 +90,18 @@
             </div>
             <div class="card">
                 <picture>
-                    <source srcset="images/Honda-PCX150-149cc-small.webp" media="(max-width: 600px)">
-                    <source srcset="image-large.jpg 2x" media="(min-width: 601px)">
-                    <img src="image-small.jpg" loading="lazy" alt="Honda PCX150 (149cc)" width="300" height="189">
+                    <source srcset="images/Honda-PCX150-149cc-small.webp">
+                    <img src="" loading="lazy" alt="Honda PCX150 (149cc)" width="300" height="189">
                 </picture>
                 <div class="description">
                     <h3>Honda PCX150 (149cc)</h3>
                     <p>deal for longer trips with a passenger. Max 2 persons. Half Day: $40, Full Day: $50.</p>
                 </div>
             </div>
-        </div>
-
-        <div class="Side-by-Side-ATVs">
             <div class="card">
                 <picture>
-                    <source srcset="images/Honda-Pioneer-1000-small.webp" media="(max-width: 600px)">
-                    <source srcset="image-large.jpg 2x" media="(min-width: 601px)">
-                    <img src="image-small.jpg" loading="lazy" alt="Honda Pioneer 1000" width="300" height="224">
+                    <source srcset="images/Honda-Pioneer-1000-small.webp">
+                    <img src="" loading="lazy" alt="Honda Pioneer 1000" width="300" height="224">
                 </picture>
                 <div class="description">
 
@@ -113,14 +110,10 @@
                         $50, Full Day: $70.</p>
                 </div>
             </div>
-        </div>
-
-        <div class="Jeeps">
             <div class="card">
                 <picture>
-                    <source srcset="images/Jeep-Wrangler-4-door-small.webp" media="(max-width: 600px)">
-                    <source srcset="image-large.jpg 2x" media="(min-width: 601px)">
-                    <img src="image-small.jpg" loading="lazy" alt="Jeep Wrangler - 4 door" width="300" height="193">
+                    <source srcset="images/Jeep-Wrangler-4-door-small.webp">
+                    <img src="" loading="lazy" alt="Jeep Wrangler - 4 door" width="300" height="193">
                 </picture>
                 <div class="description">
                     <h3>Jeep Wrangler - 4 door with A/C</h3>
@@ -129,9 +122,8 @@
             </div>
             <div class="card">
                 <picture>
-                    <source srcset="images/Jeep-Wrangler-2-door-small.webp" media="(max-width: 600px)">
-                    <source srcset="image-large.jpg 2x" media="(min-width: 601px)">
-                    <img src="image-small.jpg" loading="lazy" alt="Honda Metropolitan (49cc)" width="300" height="176">
+                    <source srcset="images/Jeep-Wrangler-2-door-small.webp">
+                    <img src="" loading="lazy" alt="Honda Metropolitan (49cc)" width="300" height="176">
                 </picture>
                 <div class="description">
                     <h3>Jeep Wrangler - 2 door:</h3>
@@ -146,7 +138,6 @@
     <!-- Social Media Links -->
     <section class="contact">
         <h2>Connect With Us</h2>
-
         <div class="social-media">
             <ul>
                 <li><a href="#" aria-label="Facbook link"><i class="fa fa-facebook"></i></a></li>
@@ -155,43 +146,61 @@
             </ul>
         </div>
 
-        <div class="contact-form">
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+        <div class="contact-larger">
+            <img src="images/contact-us.webp" loading="lazy" alt="contact us image" srcset="" width="600" height="400">
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
+
+        
 
     </section>
 
     <!-- Weather Information -->
     <section class="weather-info">
         <h2>Weather Information</h2>
-            <div class="weather-data">
-                <p>Current Temperature: <span id="current-temp">--</span>°C</p>
-                <p>Current Humidity: <span id="current-humidity">--</span>%</p>
-                <p>Tomorrow's Forecast at 3:00 PM: <span id="tomorrow-forecast">--</span>°C</p>
-                <p>Weather Condition: <span id="weather-condition">--</span></p>
-                <img id="weather-icon" src="#" alt="Weather Icon">
+        <div class="weather-data">
+            <div class="card">
+              <h3>Current Temperature</h3>
+              <p><span id="current-temp">--</span></p>
             </div>
+            <div class="card">
+              <h3>Current Humidity</h3>
+              <p><span id="current-humidity"></span></p>
+            </div>
+            <div class="card">
+              <h3>Tomorrow's Forecast at 3:00 PM</h3>
+              <p><span id="tomorrow-forecast"></span></p>
+            </div>
+            <div class="card">
+              <h3>Weather Condition</h3>
+              <p><span id="weather-condition">--</span></p>
+              <img id="weather-icon" src="#" alt="Weather Icon">
+            </div>
+          </div>  
+    </section>
+    <section class="map">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sng!4v1712232759597!5m2!1sen!2sng" title="Cozumel map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
 
-    <!-- Closeable Message -->
-    <div class="closeable-message">
-        <span class="close-btn">&times;</span>
-        <p>Today's high temperature: 85°F</p>
-    </div>
+  
 
     <!-- Footer Section -->
     <footer>

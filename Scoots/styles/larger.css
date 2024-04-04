@@ -62,5 +62,180 @@ header > .nav-container{
   color: var(--accent1-color);
 }
 
-  }
 
+.rental-services{
+  padding: 30px 120px;
+}
+
+.rental-summary{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 20px;
+}
+
+.rental-services > h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.rental-services .card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.rental-services .card .description {
+  padding: 20px 40px;
+}
+
+.rental-services .card .description h3 {
+  padding-bottom: 10px;
+}
+
+.rental-services .card .description p {
+  font-size: small;
+}
+
+/*contact*/
+.contact {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact > h2 {
+  font-size: 35px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.contact .social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contact .social-media ul li {
+  width: 40px;
+  background-color: var(--primary-color);
+  margin-left: 20px;
+  border-radius: 4px;
+}
+
+.contact .social-media ul li a {
+  color: var(--secondary-color);
+}
+
+.contact .social-media ul li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-larger{
+  display: flex;
+  justify-content: center;
+  padding: 0 120px;
+}
+
+.contact-form {
+  width: 600px;
+  height: 400px;
+  padding: 30px 40px;
+  text-align: left;
+  background-color: var(--accent-color);
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  padding: 5px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+
+/*weather info*/
+.weather-info {
+  padding: 30px;
+}
+
+.weather-info > h2 {
+  font-size: 35px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.weather-data{
+    display: flex;
+    justify-content: center;
+}
+
+.weather-data .card{
+    background-color: #e5e5e5;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
+    margin-left:7px;
+    height: 200px;
+    text-align: center;
+}
+
+.weather-data .card h3{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 1em;
+  background-color: var(--primary-color);
+  padding:15px;
+  color: var(--secondary-color);
+}
+
+.weather-data .card p{
+   text-align: center;
+   padding: 40px 15px 15px 0;
+   font-size: 1.8em;
+   font-weight:800;
+}
+#weather-condition{
+  font-size: 1em;
+  padding: 20px;
+}
+
+.weather-data .card img{
+  text-align: center;
+}
+.map{
+  text-align: center;
+}
+.map-container iframe{
+  width: 900px;
+  height: 400px;
+}
+}
