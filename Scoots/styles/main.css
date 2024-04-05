@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
   width: 100vw;
+  transition: all 0.3s ease;
 }
 
 header > .contact-info {
@@ -76,6 +77,7 @@ header > .nav-container {
 .nav-container nav ul li {
   margin-bottom: 20px;
   padding: 10px 0;
+  transition: all 0.3s ease;
 }
 
 .nav-container nav ul li a {
@@ -89,7 +91,16 @@ header > .nav-container {
 .nav-container nav ul li:hover {
   background-color: var(--secondary-color);
   border-radius: 5px;
+  
 }
+
+.active {
+    /* background-color: var(--secondary-color); */
+    border-bottom: 2px solid var(--accent3-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 .nav-container nav ul li:hover > a {
   color: #000;
 }
@@ -259,6 +270,12 @@ ul {
       }
   }
 
+   .contact-form > p{
+       font-size: 0.8em;
+       padding: 5px 0;
+   }
+
+
   form{
     background-color: var(--accent-color);
   }
@@ -370,7 +387,8 @@ textarea:focus,select{
  .rentals .rentals-larger p{
     font-size: 0.9em;
     text-align: justify;
-    margin-bottom: 20px;   
+    margin-bottom: 20px;  
+    line-height: 25px; 
  }
 
   .rentals-container {
