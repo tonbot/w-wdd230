@@ -259,14 +259,17 @@ ul {
       }
   }
 
-.contact-form label {
+  form{
+    background-color: var(--accent-color);
+  }
+ label {
   display: block;
   text-align: left;
   padding: 10px 0;
 }
 
-.contact-form input,
-.contact-form textarea {
+input,
+textarea, select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -274,12 +277,12 @@ ul {
   border-radius: 5px;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+input:focus,
+textarea:focus,select{
   outline: 1px solid var(--primary-color);
 }
 
-.contact-form button {
+ button {
   width: 100%;
   padding: 10px;
   background-color: var(--accent3-color);
@@ -288,7 +291,7 @@ ul {
   border: none;
 }
 
-.contact-form button:hover {
+ button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -348,3 +351,129 @@ ul {
     width: 100%;
     height: auto;
   }
+
+
+
+  /*rentals page */
+  .rentals{
+     padding: 30px;
+     min-height: 870.25px; 
+  }
+  .rentals > h2{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 25px;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+ .rentals .rentals-larger p{
+    font-size: 0.9em;
+    text-align: justify;
+    margin-bottom: 20px;   
+ }
+
+  .rentals-container {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .rental {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .rental-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--accent3-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rental-name {
+    font-size: 1em;
+  }
+
+  .rental-details {
+    display: none; 
+  }
+  
+  .rental-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rental-image img {
+    max-width: 100%;
+  }
+  
+  .rental-description table {
+    width: 100%;
+  }
+  
+  .rental-description table td {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+
+
+
+/*reservation*/
+.reservations-container {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+  }
+  
+  .agreement > h2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 40px 25px;
+  }
+
+  .agreement ul li {
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  .agreement ul li span {
+    text-align: left;
+  }
+ 
+  .agreement ul li {
+    margin-bottom: 20px;
+  }
+
+  .reservation-form form {
+     padding: 20px;
+
+  }
+  
+  .reservation-form {
+    border: 1px solid #ccc;
+  }
+
+  .reservation-form form  > h2{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 40px 25px;
+  }
+
+ 
