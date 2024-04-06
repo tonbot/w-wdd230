@@ -16,7 +16,7 @@ function openNav() {
 
   function closeMessage() {
     document.getElementById("closeable-message").style.display="none";
-    document.getElementById("nav-toggle").style.top="75px";
+    document.getElementById("nav-toggle").style.top="65px";
   }
 
  

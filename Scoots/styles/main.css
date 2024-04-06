@@ -104,13 +104,12 @@ header > .nav-container {
   color: #000;
 }
 
-
 .nav-toggle {
   position: absolute;
   left: 85vw;
   color: white;
-  top: 75px;
-} 
+  top: 65px;
+}
 
 .nav-toggle .fa-close {
   display: none;
