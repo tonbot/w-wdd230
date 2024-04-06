@@ -91,7 +91,6 @@ header > .nav-container {
 .nav-container nav ul li:hover {
   background-color: var(--secondary-color);
   border-radius: 5px;
-  
 }
 
 .active {
@@ -105,12 +104,13 @@ header > .nav-container {
   color: #000;
 }
 
+
 .nav-toggle {
   position: absolute;
   left: 85vw;
   color: white;
-  top: 100px;
-}
+  top: 75px;
+} 
 
 .nav-toggle .fa-close {
   display: none;
@@ -129,7 +129,7 @@ header > .nav-container {
   font-size: 2.5em;
   margin-bottom: 7px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .hero-image {
     display: none;
   }
@@ -258,7 +258,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1024px) {
     .contact-larger img{
         display: none;
        }
