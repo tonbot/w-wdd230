@@ -23,10 +23,14 @@
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-
+<style>
+    .nav-toggle {
+        top: 115px;
+    }
+</style>
 <body>
     <!-- Header Section -->
- 
+
     <header>
         <div class="nav-toggle" id="nav-toggle">
             <i class="fa fa-bars" id="openNav" onclick="openNav()"></i>
@@ -53,7 +57,7 @@
                 </ul>
             </nav>
         </div>
-      
+
     </header>
 
     <!-- Hero Section -->
@@ -64,7 +68,7 @@
             <a href="reservations.html" class="btn">Make a Reservation</a>
         </div>
         <div class="hero-image">
-            <img src="images/hero-image.webp" loading="lazy"  alt="hero-image" width="350" height="327">
+            <img src="images/hero-image.webp" loading="lazy" alt="hero-image" width="350" height="327">
         </div>
     </div>
 
@@ -76,7 +80,8 @@
             <div class="card">
                 <picture>
                     <source srcset="images/Honda-Metropolitan-49cc-small.webp">
-                    <img src="images/Honda-Metropolitan-49cc-small.webp" loading="lazy" alt="Honda Metropolitan (49cc)" width="300" height="220">
+                    <img src="images/Honda-Metropolitan-49cc-small.webp" loading="lazy" alt="Honda Metropolitan (49cc)"
+                        width="300" height="220">
                 </picture>
                 <div class="description">
                     <h3>Honda Metropolitan (49cc)</h3>
@@ -86,7 +91,8 @@
             <div class="card">
                 <picture>
                     <source srcset="images/Honda-Dio-110cc-small.webp">
-                    <img src="images/Honda-Dio-110cc-small.webp" loading="lazy" alt="Honda Dio (110cc)" width="300" height="221">
+                    <img src="images/Honda-Dio-110cc-small.webp" loading="lazy" alt="Honda Dio (110cc)" width="300"
+                        height="221">
                 </picture>
                 <div class="description">
                     <h3>Honda Dio (110cc)</h3>
@@ -96,7 +102,8 @@
             <div class="card">
                 <picture>
                     <source srcset="images/Honda-PCX150-149cc-small.webp">
-                    <img src="images/Honda-PCX150-149cc-small.webp" loading="lazy" alt="Honda PCX150 (149cc)" width="300" height="189">
+                    <img src="images/Honda-PCX150-149cc-small.webp" loading="lazy" alt="Honda PCX150 (149cc)"
+                        width="300" height="189">
                 </picture>
                 <div class="description">
                     <h3>Honda PCX150 (149cc)</h3>
@@ -106,7 +113,8 @@
             <div class="card">
                 <picture>
                     <source srcset="images/Honda-Pioneer-1000-small.webp">
-                    <img src="images/Honda-Pioneer-1000-small.webp" loading="lazy" alt="Honda Pioneer 1000" width="300" height="224">
+                    <img src="images/Honda-Pioneer-1000-small.webp" loading="lazy" alt="Honda Pioneer 1000" width="300"
+                        height="224">
                 </picture>
                 <div class="description">
 
@@ -118,7 +126,8 @@
             <div class="card">
                 <picture>
                     <source srcset="images/Jeep-Wrangler-4-door-small.webp">
-                    <img src="images/Jeep-Wrangler-4-door-small.webp" loading="lazy" alt="Jeep Wrangler - 4 door" width="300" height="193">
+                    <img src="images/Jeep-Wrangler-4-door-small.webp" loading="lazy" alt="Jeep Wrangler - 4 door"
+                        width="300" height="193">
                 </picture>
                 <div class="description">
                     <h3>Jeep Wrangler - 4 door with A/C</h3>
@@ -128,7 +137,8 @@
             <div class="card">
                 <picture>
                     <source srcset="images/Jeep-Wrangler-2-door-small.webp">
-                    <img src="images/Jeep-Wrangler-2-door-small.webp" loading="lazy" alt="Honda Metropolitan (49cc)" width="300" height="176">
+                    <img src="images/Jeep-Wrangler-2-door-small.webp" loading="lazy" alt="Honda Metropolitan (49cc)"
+                        width="300" height="176">
                 </picture>
                 <div class="description">
                     <h3>Jeep Wrangler - 2 door:</h3>
@@ -173,7 +183,7 @@
             </div>
         </div>
 
-        
+
 
     </section>
 
@@ -182,32 +192,35 @@
         <h2>Weather Information</h2>
         <div class="weather-data">
             <div class="card">
-              <h3>Current Temperature</h3>
-              <p><span id="current-temp">--</span></p>
+                <h3>Current Temperature</h3>
+                <p><span id="current-temp">--</span></p>
             </div>
             <div class="card">
-              <h3>Current Humidity</h3>
-              <p><span id="current-humidity"></span></p>
+                <h3>Current Humidity</h3>
+                <p><span id="current-humidity"></span></p>
             </div>
             <div class="card">
-              <h3>Tomorrow's Forecast at 3:00 PM</h3>
-              <p><span id="tomorrow-forecast"></span></p>
+                <h3>Tomorrow's Forecast at 3:00 PM</h3>
+                <p><span id="tomorrow-forecast"></span></p>
             </div>
             <div class="card">
-              <h3>Weather Condition</h3>
-              <p><span id="weather-condition">--</span></p>
-              <img id="weather-icon" src="#" alt="Weather Icon">
+                <h3>Weather Condition</h3>
+                <p><span id="weather-condition">--</span></p>
+                <img id="weather-icon" src="#" alt="Weather Icon">
             </div>
-          </div>  
+        </div>
     </section>
 
     <div class="map">
         <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sng!4v1712232759597!5m2!1sen!2sng" title="Cozumel map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sng!4v1712232759597!5m2!1sen!2sng"
+                title="Cozumel map" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
-  
+
 
     <!-- Footer Section -->
     <footer>

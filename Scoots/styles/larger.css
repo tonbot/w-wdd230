@@ -195,7 +195,7 @@ header > .closeable-message{
 
 /*weather info*/
 .weather-info {
-  padding: 30px;
+  padding: 30px 120px;
 }
 
 .weather-info > h2 {
@@ -205,19 +205,20 @@ header > .closeable-message{
 }
 
 .weather-data{
-    display: flex;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 20px;
 }
 
 .weather-data .card{
-    margin-bottom: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
-    margin-left:7px;
-    height: 200px;
-    text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
+  height: 200px;
+  text-align: center;
 }
+
 
 .weather-data .card h3{
   border-top-left-radius: 10px;
@@ -242,10 +243,11 @@ header > .closeable-message{
 }
 .map{
   text-align: center;
+  padding: 80px 120px;
 }
 .map-container iframe{
-  width: 900px;
-  height: 400px;
+  width: 100%;
+  height: auto;
 }
 
   /*rentals page */
