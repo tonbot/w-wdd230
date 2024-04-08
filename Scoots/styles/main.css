@@ -29,29 +29,27 @@ header > .contact-info {
   font-size: 0.7em;
 }
 
-header > .closeable-message{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 0.7em;
+header > .closeable-message {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 0.7em;
 }
 
-.closeable-message .close-btn{
-    display: flex;
-    font-size: 20px;
-    width: 20px;
-    height: 20px;
-     background-color: var(--accent3-color);
-    /* background-color: var(--primary-color); */
-    color: var(--secondary-color);
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-  
+.closeable-message .close-btn {
+  display: flex;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent3-color);
+  /* background-color: var(--primary-color); */
+  color: var(--secondary-color);
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
-
 
 header > .nav-container {
   display: block;
@@ -94,10 +92,10 @@ header > .nav-container {
 }
 
 .active {
-    /* background-color: var(--secondary-color); */
-    border-bottom: 2px solid var(--accent3-color);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  /* background-color: var(--secondary-color); */
+  border-bottom: 2px solid var(--accent3-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .nav-container nav ul li:hover > a {
@@ -118,8 +116,6 @@ header > .nav-container {
 /*hero*/
 .hero {
   background-color: var(--accent-color);
-  padding: 40px 20px;
-  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -128,9 +124,30 @@ header > .nav-container {
   font-size: 2.5em;
   margin-bottom: 7px;
 }
+@media screen and (max-width: 600px) {
+  .hero {
+    background-image: url("../images/cozumel-background-small.webp");
+  }
+}
+
 @media screen and (max-width: 1024px) {
-  .hero-image {
-    display: none;
+  .hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .dark-transparent{
+    background:rgba(0, 0, 0, 0.7);
+    width:100%;
+    height: 100%;
+    padding: 40px 20px;
+    padding-bottom: 60px;
+  }
+  .hero-text h2 {
+    color: var(--secondary-color);
+  }
+  .hero-text p {
+  color: var(--secondary-color);
   }
 }
 .hero-text p {
@@ -147,7 +164,7 @@ header > .nav-container {
 }
 
 .hero-text a:hover {
-  background-color: transparent;
+  background-color: white;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
 }
@@ -162,6 +179,7 @@ header > .nav-container {
   color: var(--secondary-color);
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
@@ -169,20 +187,41 @@ ul {
 .footer .social-media {
   margin-bottom: 20px;
 }
-.footer .social-media > h2,
+
+.footer .social-media > p{
+  font-size: 0.9em;
+  padding-bottom: 15px;
+  text-align: justify;
+  line-height: 20px;
+}
+
 .footer .footer-links > h2,
 .footer .footer-contact-info > h2 {
   font-size: 20px;
   padding-bottom: 10px;
 }
 
+
 .social-media > ul {
   display: flex;
 }
 
-.social-media > ul li {
-  padding: 7px;
+.social-media .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width :30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  margin-right: 10px;
 }
+
+.social-media .icon:hover{
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
 
 .footer .footer-links {
   margin-bottom: 25px;
@@ -244,6 +283,7 @@ ul {
 .contact .social-media ul li {
   width: 40px;
   background-color: var(--accent3-color);
+  padding: 5px;
   /* background-color: var(--primary-color); */
   margin-left: 10px;
   border-radius: 4px;
@@ -257,35 +297,35 @@ ul {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-  @media screen and (max-width: 1024px) {
-    .contact-larger img{
-        display: none;
-       }
-
-       .contact-form {
-        padding: 40px 40px;
-        text-align: left;
-        background-color: var(--accent-color);
-      }
+@media screen and (max-width: 1024px) {
+  .contact-larger img {
+    display: none;
   }
 
-   .contact-form > p{
-       font-size: 0.8em;
-       padding: 5px 0;
-   }
-
-
-  form{
+  .contact-form {
+    padding: 40px 40px;
+    text-align: left;
     background-color: var(--accent-color);
   }
- label {
+}
+
+.contact-form > p {
+  font-size: 0.8em;
+  padding: 5px 0;
+}
+
+form {
+  background-color: var(--accent-color);
+}
+label {
   display: block;
   text-align: left;
   padding: 10px 0;
 }
 
 input,
-textarea, select {
+textarea,
+select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -294,11 +334,12 @@ textarea, select {
 }
 
 input:focus,
-textarea:focus,select{
+textarea:focus,
+select {
   outline: 1px solid var(--primary-color);
 }
 
- button {
+button {
   width: 100%;
   padding: 10px;
   background-color: var(--accent3-color);
@@ -307,8 +348,8 @@ textarea:focus,select{
   border: none;
 }
 
- button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*weather info*/
@@ -324,173 +365,163 @@ textarea:focus,select{
   margin-bottom: 20px;
 }
 
-.weather-data{
-   padding: 20px;
+.weather-data {
+  padding: 20px;
 }
 
-.weather-data .card{
-    background-color: #e5e5e5;
-    margin-bottom: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7);
-    height: 100px;
-    /* padding: 20px 20px; */
+.weather-data .card {
+  background-color: #e5e5e5;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7);
+  height: 100px;
+  /* padding: 20px 20px; */
 }
 
-.weather-data .card h3{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    font-size: 0.9em;
-    background-color: var(--primary-color);
-    padding:10px;
-    color: var(--secondary-color);
-  }
+.weather-data .card h3 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 0.9em;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--secondary-color);
+}
 
+.weather-data .card p {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: 200;
+}
 
-  .weather-data .card p{
-    text-align: center;
-    padding: 20px;
-    font-size: 1.2em;
-    font-weight:200;
- }
+.weather-data .card img {
+  display: none;
+}
 
- .weather-data .card img{
-    display: none;
-  }
+.map {
+  text-align: center;
+  padding: 0 40px 80px 40px;
+}
+.map-container iframe {
+  width: 100%;
+  height: auto;
+}
 
-  .map{
-    text-align: center;
-    padding: 0 40px 80px 40px;
-  }
-  .map-container iframe{
-    width: 100%;
-    height: auto;
-  }
+/*rentals page */
+.rentals {
+  padding: 30px;
+  min-height: 870.25px;
+}
+.rentals > h2 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.rentals .rentals-larger p {
+  font-size: 0.9em;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
 
+.rentals-container {
+  display: flex;
+  flex-direction: column;
+}
 
-  /*rentals page */
-  .rentals{
-     padding: 30px;
-     min-height: 870.25px; 
-  }
-  .rentals > h2{
-    font-size: 25px;
-    font-weight: 500;
-    padding: 10px 25px;
-    text-align: center;
-    margin-bottom: 20px;
- }
+.rental {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
 
- .rentals .rentals-larger p{
-    font-size: 0.9em;
-    text-align: justify;
-    margin-bottom: 20px;  
-    line-height: 25px; 
- }
+.rental-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
 
-  .rentals-container {
-    display: flex;
-    flex-direction: column;
-   
-  }
-  
-  .rental {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  .rental-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 10px;
-  }
-  
-  .toggle-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 30px;
-    color: var(--accent3-color);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .rental-name {
-    font-size: 1em;
-  }
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: var(--accent3-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .rental-details {
-    display: none; 
-  }
-  
-  .rental-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.rental-name {
+  font-size: 1em;
+}
 
-  .rental-image img {
-    max-width: 100%;
-  }
-  
-  .rental-description table {
-    width: 100%;
-  }
-  
-  .rental-description table td {
-    padding: 5px;
-    border-bottom: 1px solid #ccc;
-  }
-  
+.rental-details {
+  display: none;
+}
 
+.rental-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.rental-image img {
+  max-width: 100%;
+}
+
+.rental-description table {
+  width: 100%;
+}
+
+.rental-description table td {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
 
 /*reservation*/
 .reservations-container {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 30px;
-  }
-  
-  .agreement > h2 {
-    font-size: 25px;
-    font-weight: 500;
-    padding: 40px 25px;
-  }
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+}
 
-  .agreement ul li {
-    font-size: 0.9em;
-    text-align: justify;
-  }
+.agreement > h2 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 40px 25px;
+}
 
-  .agreement ul li span {
-    text-align: left;
-  }
- 
-  .agreement ul li {
-    margin-bottom: 20px;
-  }
+.agreement ul li {
+  font-size: 0.9em;
+  text-align: justify;
+}
 
-  .reservation-form form {
-     padding: 20px;
+.agreement ul li span {
+  text-align: left;
+}
 
-  }
-  
-  .reservation-form {
-    border: 1px solid #ccc;
-  }
+.agreement ul li {
+  margin-bottom: 20px;
+}
 
-  .reservation-form form  > h2{
-    font-size: 25px;
-    font-weight: 500;
-    padding: 20px 40px 25px;
-  }
+.reservation-form form {
+  padding: 20px;
+}
 
- 
+.reservation-form {
+  border: 1px solid #ccc;
+}
+
+.reservation-form form > h2 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 40px 25px;
+}

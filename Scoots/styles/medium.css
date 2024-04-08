@@ -64,12 +64,14 @@ header > .closeable-message{
 .hero{
   align-items: center;
   justify-content: space-between;
-  padding: 80px 80px;
+  background-image: url("../images/cozumel-background-big.webp");
 }
 
+
 .footer{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
   padding: 40px 60px;
 }
 
