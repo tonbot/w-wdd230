@@ -65,22 +65,54 @@ header > .closeable-message{
 }
 
 .hero{
-  display: flex;
- 
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
-  padding: 0 80px;
+  background-image: url("../images/cozumel-background-big.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dark-transparent{
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 30px;
+  padding: 40px;
+}
+
+.hero-text{
+  height: 173px;
+ 
 }
 
 .footer{
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
   justify-content: space-between;
   padding: 40px 60px;
+  gap: 30px;
 }
 
 .footer .social-media > h2, .footer .footer-links > h2, .footer .footer-contact-info > h2{
   font-size: 20px;
   padding-bottom: 15px;
+}
+
+.social-media .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width :30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  margin-right: 10px;
+}
+
+.social-media .icon:hover{
+  background-color: var(--secondary-color);
+  color: #000;
 }
 
 
